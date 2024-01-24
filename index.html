@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/163c61646c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  .font-family {
+    font-family: 'Manrope', sans-serif;
+  }
+</style>
+</head>
+<body class="font-family">
+   <header>
+    <!-- navbar-->
+<section>
+    <div class="navbar bg-base-100 lg:w-11/12 mx-auto lg:my-14">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240] -mx-1">'</span> s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end ">
+            <img class="invisible lg:visible" src="images/search.svg" alt="">
+          <a class="btn bg-[#FF4240] text-white px-6 lg:ml-6 ">Get Ticket</a>
+        </div>
+      </div>
+</section>
+ <!--banner-->
+ <section>
+    <!--image slide-->
+    <div class="carousel flex mx-auto max-w-[340px] lg:max-w-[1180px] rounded-xl relative">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/1.png" class="" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!--card inside-->
+      <div class="lg:absolute lg:right-10 lg:bottom-10">
+        <div class="bg-black p-10 rounded-xl space-y-3">
+        <h1 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h1>
+        <p class="text-[#FFFFFF99] w-[500px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proi</p>
+        </div>
+      </div>
+      </div>
+      <!--card inside-->
+      <div class="lg:hidden">
+        <div class="bg-black p-5 rounded-xl w-[340px] mx-auto mt-10">
+        <h1 class="text-white">Meet all the heroes from the field</h1>
+        <p class="text-white px-1">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proi</p>
+        </div>
+      </div>
+ </section>
+   </header> 
+   <main>
+    <section>
+      <div class="mt-20 mb-10 py-8 mx-auto border-y-2 border-dotted w-11/12">
+        <h1 class="mb-6 text-[#131318] text-4xl font-extrabold text-center">Professional Hockeys Club</h1>
+        <p class="text-center font-medium w-[300px] lg:w-[607px] flex mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <!--percentage-->
+      <div class="grid grid-cols-1 lg:grid-cols-4 w-11/12 mx-auto">
+        <!--percentage one-->
+        <div class="card bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-4">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!--percentage two-->
+        <div class="card bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-4">Experienced Coach</h2>
+            <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!--percentage three-->
+        <div class="card bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-amber-400" style="--value:90;" role="progressbar">90%</div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-4">Senior Player</h2>
+            <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+          </div>
+        </div>
+        <!--percentage four-->
+        <div class="card bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title mb-4">Training Ground</h2>
+            <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--gallery content-->
+    <section>
+      <div class="mt-20 mb-10 py-8 mx-auto border-y-2 border-dotted w-11/12">
+        <h1 class="mb-6 text-[#131318] text-4xl font-extrabold text-center">Program Sections</h1>
+        <p class="font-medium w-[300px] lg:w-[607px] flex mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    <!--gallery content-->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-11/12 mx-auto">
+      <!--photo one-->
+      <div class="hero rounded-2xl" style="background-image: url(images/2.png);">
+        <div class="hero-overlay bg-opacity-60 rounded-xl">
+          <div class="text-neutral-content flex justify-start">
+            <div class="p-5 lg:px-10">
+                <h1 class="lg:mt-20 mb-5 text-3xl font-bold">Junior Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="lg:mb-10 btn bg-[#FF4240] border-none font-bold text-white px-6 text-xl">Register Now!</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--photo two-->
+      <div class="hero  rounded-2xl" style="background-image: url(images/2.png);">
+        <div class="hero-overlay bg-opacity-60 rounded-xl">
+          <div class="text-neutral-content flex justify-start">
+            <div class="p-5 lg:px-10">
+              <h1 class="lg:mt-20 mb-5 text-3xl font-bold">Teenager Program</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="lg:mb-10 btn bg-[#FF4240] border-none font-bold text-white px-6 text-xl">Register Now!</button>
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+    <div class="mt-5 w-11/12 mx-auto">
+      <!--photo three-->
+      <div class="bg-no-repeat w-full bg-cover rounded-xl" style="background-image: url(images/4.png);">
+        <div class="hero-overlay bg-opacity-60">
+          <div class="text-neutral-content">
+            <div class="p-5 lg:p-10">
+              <h1 class="lg:mt-52 mb-5 text-3xl font-bold">Professional Program</h1>
+              <p class="mb-5 lg:w-[550px]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi, In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class=" btn bg-[#FF4240] border-none font-bold text-white px-6 text-xl">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+<!--New Products-->
+    <section>
+      <div class="mt-20 mb-10 py-8 mx-auto border-y-2 border-dotted w-11/12">
+        <h1 class="mb-6 text-[#131318] text-4xl font-extrabold text-center">Our New Products</h1>
+        <p class="font-medium w-[300px] lg:w-[607px] flex mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <!--new products card-->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-11/12 mx-auto">
+        <!--card one-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="bg-contain mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl" src="images/5.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between ">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card two-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="bg-contain mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl" src="images/6.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between ">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card three-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="bg-contain mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl" src="images/7.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">Cap For Hockeys</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card four-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="bg-contain mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl" src="images/8.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between ">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card five-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="bg-contain mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl" src="images/9.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">Cap For Hockeys</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card six-->
+        <div class="lg:pl-5 card lg:card-side bg-base-100 border-2 border-[#1313181A] rounded-2xl">
+          <figure><img class="mt-5 lg:mt-0 w-[280px] h-[172px] rounded-2xl bg-contain" src="images/10.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex gap-5">
+             <div class="flex gap-2">
+               <img src="images/star.png">
+               <h1>5.0</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/eye.png">
+               <h1>20</h1>
+             </div>
+             <div class="flex gap-2">
+               <img src="images/heart.png">
+               <h1>200</h1>
+             </div>
+            </div>
+            <div>
+            <h2 class="card-title">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            </div>
+            <div class="lg:flex justify-between ">
+              <h1 class="text-[#FF4240] text-xl font-extrabold mb-2">Price - $22.00</h1>
+              <div class="flex gap-1">
+                <img src="images/cart.svg" alt="">
+                <div class="flex gap-1 items-center">
+                  <p>Delivery</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--clients questions-->
+    <section>
+      <div class="mt-20 mb-10 py-8 mx-auto border-y-2 border-dotted w-11/12">
+        <h1 class="mb-6 text-[#131318] text-4xl font-extrabold text-center">Clients Question</h1>
+        <p class="font-medium w-[300px] lg:w-[607px] flex mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="hero w-11/12 mx-auto border-2 border-[#1313181A] rounded-2xl">
+        <div class="hero-content flex-col justify-between lg:flex-row py-10 lg:px-10 w-full">
+          <img src="images/11.png" class="rounded-2xl flex-1" />
+          <!-- accordion-->
+          <div class="flex-1">
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Our Equipment
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-bold text-[#131318]">
+                Pricings
+              </div>
+              <div class="collapse-content"> 
+                <p>Dolor sit amet consectetur. Ut urna diam quis <br> sagittis. Elit elit enim sagittis turpis in magna.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--get in touch-->
+    <section class="">
+      <div class="mt-20 mb-12 py-8 mx-auto border-y-2 border-dotted w-11/12">
+        <h1 class="mb-6 text-[#131318] text-4xl font-extrabold text-center">Get In Touch</h1>
+        <p class="font-medium w-[300px] lg:w-[607px] flex mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+        <div class="w-11/12 mx-auto lg:flex justify-between">
+          <!--card info-->
+        <div class="border-2 py-6 px-6 rounded-2xl border-[#1313181A] w-1/2">
+          <!--card 0ne-->
+          <div class="card mb-6 bg-[#BCED6D1A] text-primary-content rounded-2xl">
+            <div class="card-body">
+              <img class="w-[48px]" src="images/Group 1171275317.png" alt="">
+              <h2 class="card-title text-gray-400 font-normal">Phone Number</h2>
+              <p class="text-[#131318] text-lg font-extrabold">(+62) 123-321-543</p>
+            </div>
+          </div>
+          <!--card two-->
+          <div class="card mb-6 bg-[#FDDD5F1A] text-primary-content rounded-2xl ">
+            <div class="card-body">
+              <img class="w-[48px]" src="images/Group 1171275318.png" alt="">
+              <h2 class="card-title text-gray-400 font-normal">Email</h2>
+              <p class="text-[#131318] text-lg font-extrabold">hockeys@support.com</p>
+            </div>
+          </div>
+          <!--card three-->
+          <div class="card bg-[#629CF31A] text-primary-content rounded-2xl">
+            <div class="card-body">
+              <img class="w-[48px]" src="images/Group 1171275321.png" alt="">
+              <h2 class="card-title text-gray-400 font-normal">Location</h2>
+              <p class="text-[#131318] text-lg font-extrabold">152/1 Mohakhali Wireless Gate</p>
+            </div>
+          </div>
+        </div>
+        <!--login info-->
+        <div class="w-1/2 lg:pl-6">
+          <div class="grid grid-cols-1 lg:flex gap-6 mb-5 px-5">
+            <!--one-->
+            <div><label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text text-xl font-bold">Your Name</span>
+              </div>
+              <input type="text" placeholder="Enter your full name" class="input bg-[#13131808] lg:w-[250px]" />
+            </label>
+          </div>
+          <div><label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text text-xl font-bold">Your Email</span>
+            </div>
+            <input type="text" placeholder="Enter your email" class="input bg-[#13131808] lg:w-[250px]" />
+          </label>
+        </div>
+          </div>
+          <div class="grid grid-cols-1 lg:flex gap-6 mb-5 px-5">
+            <!--two-->
+            <div><label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text text-xl font-bold">Subject</span>
+              </div>
+              <input type="text" placeholder="Enter your subject" class="input bg-[#13131808] lg:w-[250px]" />
+            </label>
+          </div>
+          <div>
+            <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text text-xl font-bold">Phone Number</span>
+            </div>
+            <input type="text" placeholder="Enter your phone number" class="input bg-[#13131808] lg:w-[250px]" />
+          </label>
+        </div>
+          </div>
+          <div class="mb-5 px-5 ">
+            <label class="form-control">
+              <div class="label">
+                <span class="label-text text-xl font-bold">Message</span>
+              </div>
+              <textarea class="textarea lg:w-[520px] lg:h-[350px] bg-[#13131808]" placeholder="Write your message"></textarea>
+            </label>
+          </div>
+          <div class="flex justify-center lg:justify-start lg:pl-5">
+            <button class="btn bg-[#FF4240] text-white w-[300px] lg:w-[520px]">Send Messege</button>
+          </div>
+        </div>
+        </div>
+      
+      <!--social media-->
+      <div class="bg-[#13131808] mt-12 py-9 text-2xl font-extrabold w-11/12 mx-auto">
+        <h1 class="text-center mb-6">Social Media</h1>
+        <div class="flex justify-center">
+          <img src="images/Social.svg" alt="">
+        </div>
+      </div>
+    </section>
+   </main>
+   <!--footer-->
+   <footer class="bg-[rgb(19,19,24)] mt-24 mx-auto mb-0">
+<div class="grid grid-cols-1 lg:grid-cols-3 pt-28 pb-24 p-5 lg:pl-24">
+  <div class="flex justify-center mb-5">
+    <div class="space-y-3">
+      <p class="text-center lg:text-start text-[#FFFFFF] text-2xl font-extrabold">Get in touch</p>
+      <p class="lg:w-[300px] lg:text-start text-[#FFFFFF99]">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <div class="flex gap-4 justify-center lg:justify-start">
+        <img src="images/email.png" alt="">
+      <p class="text-[#FFFFFF99]">hockeys@support.com</p>
+      </div>
+      <div class="flex gap-4 justify-center lg:justify-start">
+        <img src="images/call.png" alt="">
+        <p class="text-[#FFFFFF99]">(+62) 123-321-543</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-2">
+    <div class="space-y-3">
+      <p class="text-center lg:text-start text-[#FFFFFF] text-2xl font-extrabold"><a class="link link-hover">Company</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">About Us</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Careers</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">News & Article</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Legal Notice</a></p>
+    </div>
+    <div class="space-y-3">
+      <p class="text-center lg:text-start text-[#FFFFFF] text-2xl font-extrabold"><a class="link link-hover">Support</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Help Center</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">FAQ</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Ticket Support</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Contact Us</a></p>
+    </div>
+  </div>
+  <div class="flex justify-center lg:justify-start mt-5 lg:mt-0 lg:pt-0">
+    <div class="space-y-3">
+      <p class="text-center lg:text-start text-[#FFFFFF] text-2xl font-extrabold"><a class="link link-hover">Services</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Academy</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Group Lesson</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Private Lesson</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Hockeys for kids</a></p>
+      <p class="text-center lg:text-start text-[#FFFFFF99]"><a class="link link-hover">Hockeys for adults</a></p>
+    </div>
+  </div>
+</div>
+   </footer>
+  
+</body>
+</html>
